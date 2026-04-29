@@ -158,6 +158,28 @@ body {
   margin-bottom: 1.1rem;
 }
 
+.top-nav {
+  position: sticky;
+  top: 0;
+  background: var(--paper);
+  border-bottom: 1px solid var(--border);
+  z-index: 100;
+}
+
+.sidebar-nav__panel {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
 .sidebar-nav__heading {
   margin: 0 0 0.65rem;
   padding: 0 0.15rem;
@@ -166,20 +188,6 @@ body {
   font-weight: 700;
   color: var(--text);
   letter-spacing: -0.01em;
-}
-
-.sidebar-nav__panel {
-  background: var(--paper);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 0.35rem;
-  box-shadow: var(--shadow-sm);
-}
-
-.nav-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .nav-list li + li {
